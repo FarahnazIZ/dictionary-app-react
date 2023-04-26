@@ -1,14 +1,13 @@
 import React from "react";
 
-function Definitions({ data }) {
+function Examples({ data }) {
   return (
-    <div className="Definitions">
+    <div className="Examples">
       {data.map((value) =>
         value.meanings.map((meaning) =>
           meaning.definitions.map((props) => (
-            <div key={props.definition}>
-              <li>{props.definition}</li>
-              <hr />
+            <div key={props.example}>
+              <li>{props.example}</li>
             </div>
           ))
         )
@@ -17,4 +16,4 @@ function Definitions({ data }) {
   );
 }
 
-export default Definitions;
+export default Examples;
