@@ -20,7 +20,7 @@ function Header() {
     <div className="Header">
       <div className="container mx-auto py-8 text-center">
         <h1 className="text-3xl font-bold">Dictionary</h1>
-        <h3 className="mt-1">Find the definition of a word</h3>
+        <p className="mt-1">Find the definition of a word</p>
         <div className="flex items-center justify-center mt-5">
           <form className="flex border-2 rounded">
             <input
