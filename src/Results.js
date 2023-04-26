@@ -33,7 +33,14 @@ function Results() {
   }, [inputValue]);
 
   if (loading) {
-    return <h3>Loading...</h3>;
+    return (
+      <div className="flex flex-col space-y-3 animate-pulse p-4 container mx-auto max-w-2xl">
+        <div className="h-6 bg-gray-300 mt-5 rounded-md"></div>
+        <div className="h-40 bg-gray-300 mt-5 rounded-md"></div>
+        <div className="h-8 bg-gray-300 mt-5 rounded-md"></div>
+        <div className="h-40 bg-gray-300 mt-5 rounded-md"></div>
+      </div>
+    );
   }
 
   if (error) {
