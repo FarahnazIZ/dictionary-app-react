@@ -44,7 +44,7 @@ function Results() {
         {response && (
           <div>
             <h3 className="font-bold mt-4">Definitions:</h3>
-            <Definitions />
+            <Definitions data={response} />
             <h3 className="font-bold mt-4">Examples:</h3>
             <h3 className="font-bold mt-4">Synonyms:</h3>
             <h3 className="font-bold mt-4">Antonyms:</h3>
