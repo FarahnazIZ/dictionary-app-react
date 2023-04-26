@@ -1,12 +1,12 @@
 import React from "react";
 
-function Synonyms({ data }) {
+function Antonyms({ data }) {
   return (
-    <div className="Synonyms">
+    <div className="Antonyms">
       <div className="columns-2 md:columns-3">
         {data.map((value) =>
           value.meanings.map((props) => {
-            return props.synonyms?.map((synonym) => <li>{synonym}</li>);
+            return props.antonyms?.map((antonym) => <li>{antonym}</li>);
           })
         )}
       </div>
@@ -14,4 +14,4 @@ function Synonyms({ data }) {
   );
 }
 
-export default Synonyms;
+export default Antonyms;

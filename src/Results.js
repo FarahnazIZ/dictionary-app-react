@@ -2,8 +2,8 @@ import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { InputContext } from "./App";
 import Definitions from "./Definitions";
-import Examples from "./Examples";
 import Synonyms from "./Synonyms";
+import Antonyms from "./Antonyms";
 
 axios.defaults.baseURL = `https://api.dictionaryapi.dev/api/v2/entries/en`;
 
@@ -47,11 +47,10 @@ function Results() {
           <div>
             <h3 className="font-bold mt-4">Definitions:</h3>
             <Definitions data={response} />
-            <h3 className="font-bold mt-4">Examples:</h3>
-            <Examples data={response} />
             <h3 className="font-bold mt-4">Synonyms:</h3>
             <Synonyms data={response} />
             <h3 className="font-bold mt-4">Antonyms:</h3>
+            <Antonyms data={response} />
           </div>
         )}
       </div>
