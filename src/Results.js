@@ -3,6 +3,7 @@ import axios from "axios";
 import { InputContext } from "./App";
 import Definitions from "./Definitions";
 import Examples from "./Examples";
+import Synonyms from "./Synonyms";
 
 axios.defaults.baseURL = `https://api.dictionaryapi.dev/api/v2/entries/en`;
 
@@ -49,6 +50,7 @@ function Results() {
             <h3 className="font-bold mt-4">Examples:</h3>
             <Examples data={response} />
             <h3 className="font-bold mt-4">Synonyms:</h3>
+            <Synonyms data={response} />
             <h3 className="font-bold mt-4">Antonyms:</h3>
           </div>
         )}
