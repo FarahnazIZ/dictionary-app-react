@@ -14,7 +14,7 @@ function App() {
 
   return (
     <InputContext.Provider value={value}>
-      <div className="App">
+      <div className="App font-mono">
         <Header />
         <Results />
       </div>

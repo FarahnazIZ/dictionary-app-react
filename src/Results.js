@@ -52,11 +52,11 @@ function Results() {
       <div className="container mx-auto p-4 max-w-2xl">
         {response && (
           <div>
-            <h3 className="font-bold mt-4">Definitions:</h3>
+            <h3 className="font-bold mt-4 mb-1 text-lg">Definitions:</h3>
             <Definitions data={response} />
-            <h3 className="font-bold mt-4">Synonyms:</h3>
+            <h3 className="font-bold mt-4 mb-1 text-lg">Synonyms:</h3>
             <Synonyms data={response} />
-            <h3 className="font-bold mt-4">Antonyms:</h3>
+            <h3 className="font-bold mt-4 mb-1 text-lg">Antonyms:</h3>
             <Antonyms data={response} />
           </div>
         )}
